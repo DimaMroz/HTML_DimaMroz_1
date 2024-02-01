@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шість блоків</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(253, 224, 194);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .block {
+      width: 100px;
+      height: 100px;
+      background-color: #fc0000;
+      margin: 10px;
+      transition: background-color 0.3s, border-radius 0.3s;
+    }
+    .block:hover {
+      background-color: #7f7f7f;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+</div>
+
+</body>
+</html>
