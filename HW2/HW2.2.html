@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Шість блоків</title>
+  <title>Шість блоків з буквами</title>
   <style>
     body {
       margin: 0;
@@ -20,27 +20,42 @@
       align-items: center;
     }
     .block {
+      position: relative;
       width: 100px;
       height: 100px;
       background-color: #fc0000;
       margin: 10px;
-      transition: background-color 0.3s, border-radius 0.3s;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: center; /* Вирівнювання по горизонталі */
+      align-items: center; /* Вирівнювання по вертикалі */
+      font-size: 24px;
     }
     .block:hover {
       background-color: #7f7f7f;
       border-radius: 50%;
+
+    }
+    .block:hover::after {
+      content: attr(data-letter); /* Відображення букви */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff; /* Колір тексту */
+      font-size: inherit; /* Той самий розмір шрифту, як у блоку */
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="block"></div>
-  <div class="block"></div>
-  <div class="block"></div>
-  <div class="block"></div>
-  <div class="block"></div>
-  <div class="block"></div>
+  <div class="block" data-letter="@"></div>
+  <div class="block" data-letter="O"></div>
+  <div class="block" data-letter="K"></div>
+  <div class="block" data-letter="T"></div>
+  <div class="block" data-letter="E"></div>
+  <div class="block" data-letter="N"></div>
 </div>
 
 </body>
