@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка з віджетами</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Віджети розташовані в стовпці */
+            min-height: 100vh; /* Мінімальна висота вікна перегляду */
+        }
+        .widget {
+            flex: 1; /* Кожен віджет займає однакову частину доступного простору */
+            background-color: #ccc;
+            margin: 10px;
+            display: flex;
+            justify-content: center; /* Вирівнювання контенту по горизонталі */
+            align-items: center; /* Вирівнювання контенту по вертикалі */
+            text-align: center; /* Вирівнювання тексту по центру */
+        }
+        .main-widget {
+            flex-grow: 2; /* Головний віджет збільшується удвічі */
+        }
+        .small-widget {
+            display: flex; /* Менші віджети розташовані в рядку */
+        }
+        .small-widget > div {
+            flex: 1; /* Кожен менший віджет займає однакову частину доступного простору */
+            background-color: #ccc;
+            margin: 10px;
+            width: 100px; /* Фіксована ширина */
+            height: 100px; /* Фіксована висота */
+        }
+    </style>
+</head>
+<body>
+
+<div class="widget main-widget">Головний віджет</div>
+
+<div class="small-widget">
+    <div class="widget">Менший віджет 1</div>
+    <div class="widget">Менший віджет 2</div>
+    <div class="widget">Менший віджет 3</div>
+</div>
+
+<div class="widget" style="flex-grow: 2;">Третій віджет, що займає удвічі більше місця</div>
+
+</body>
+</html>
