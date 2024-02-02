@@ -3,50 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сторінка з віджетами</title>
+    <title>Widgets</title>
     <style>
-        body {
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
+            color: #ffffff;
             display: flex;
-            flex-direction: column; /* Віджети розташовані в стовпці */
-            min-height: 100vh; /* Мінімальна висота вікна перегляду */
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .widget {
-            flex: 1; /* Кожен віджет займає однакову частину доступного простору */
-            background-color: #ccc;
-            margin: 10px;
-            display: flex;
-            justify-content: center; /* Вирівнювання контенту по горизонталі */
-            align-items: center; /* Вирівнювання контенту по вертикалі */
-            text-align: center; /* Вирівнювання тексту по центру */
+            width: 200px;
+            height: 200px;
+            background-color: #164479;
+            margin: 20px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
         }
         .main-widget {
-            flex-grow: 2; /* Головний віджет збільшується удвічі */
-        }
-        .small-widget {
-            display: flex; /* Менші віджети розташовані в рядку */
-        }
-        .small-widget > div {
-            flex: 1; /* Кожен менший віджет займає однакову частину доступного простору */
-            background-color: #ccc;
+            width: 680px;
+            background-color: #2169ba;
             margin: 10px;
-            width: 100px; /* Фіксована ширина */
-            height: 100px; /* Фіксована висота */
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
 
-<div class="widget main-widget">Головний віджет</div>
-
-<div class="small-widget">
-    <div class="widget">Менший віджет 1</div>
-    <div class="widget">Менший віджет 2</div>
-    <div class="widget">Менший віджет 3</div>
+<div class="container">
+    <div class="main-widget">Widgets</div>
+    <div class="row">
+        <div class="widget">Big Widgets</div>
+        <div class="widget">Bigger Widgets</div>
+        <div class="widget">Huge Widgets</div>
+    </div>
+    <div class="main-widget">Contact</div>
 </div>
-
-<div class="widget" style="flex-grow: 2;">Третій віджет, що займає удвічі більше місця</div>
 
 </body>
 </html>
