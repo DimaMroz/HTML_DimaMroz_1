@@ -28,13 +28,14 @@
             border-radius: 10px;
             margin: 10px;
             display: flex;
+            flex-direction: column; /* Сделаем контейнер виджета вертикальным */
             justify-content: center;
             align-items: center;
         }
 
         .widget img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 50%;
+            max-height: 50%; /* Уменьшим размер изображения */
             border-radius: 8px;
         }
 
@@ -51,36 +52,47 @@
 <div class="widget-container">
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c247-2427884_85682.png" alt="Image 1">
+        <p>Pepper</p>
     </div>
+    <!-- Добавляем поочередно слова в каждый виджет -->
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c240-2427880_85675.png" alt="Image 2">
+        <p>Apple</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c217-2427859_85693.png" alt="Image 3">
+        <p>Cheese</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c245-2427889_85690.png" alt="Image 4">
+        <p>Corn</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c239-2427893_85707.png" alt="Image 5">
+        <p>Mushroom</p>
     </div>
 </div>
 
 <div class="widget-container">
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c238-2427878_85676.png" alt="Image 6">
+        <p>Garlic</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c225-2427885_85692.png" alt="Image 7">
+        <p>Beef</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c205-2427851_85705.png" alt="Image 8">
+        <p>Flash</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c203-2427849_85703.png" alt="Image 9">
+        <p>Eggs</p>
     </div>
     <div class="widget">
         <img src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c235-2427892_85688.png" alt="Image 10">
+        <p>Coriander</p>
     </div>
 </div>
 
@@ -88,3 +100,4 @@
 
 </body>
 </html>
+
