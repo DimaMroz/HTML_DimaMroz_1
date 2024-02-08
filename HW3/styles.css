@@ -14,43 +14,43 @@ body, html {
 }
 
 .top-background {
-    font-size: 24px; /* Размер текста */
+    font-size: 24px;
     background-image: url("odin.png");
-    background-size: cover; /* Масштабировать изображение, чтобы оно полностью покрывало элемент */
-    background-position: center; /* Расположить изображение по центру */
+    background-size: cover;
+    background-position: center;
     height: 100%;
     text-align: center;
     position: relative;
-    padding-top: 20px; /* Добавляем отступ сверху к контейнеру */
+    padding-top: 20px;
 }
 
 .middle-background {
-    font-size: 24px; /* Размер текста */
+    font-size: 24px;
     background-image: url("dva.gif");
         background-size: cover;
         background-position: center;
         height: 100%;
         text-align: center;
         position: relative;
-    padding-top: 20px; /* Добавляем отступ сверху к контейнеру */
+    padding-top: 20px;
 }
 
 .bottom-background {
-    font-size: 24px; /* Размер текста */
+    font-size: 24px;
     background-image: url("tri.jpg");
         background-size: cover;
         background-position: center;
         height: 100%;
         text-align: center;
         position: relative;
-    padding-top: 20px; /* Добавляем отступ сверху к контейнеру */
+    padding-top: 20px;
 }
 
     .arrow-down {
         background-image: url("add_FILL0_wght400_GRAD0_opsz24.svg");
         background-color: #f0f0f0;
-        width: 20px; /* Установите ширину изображения */
-        height: 20px; /* Установите высоту изображения */
+        width: 20px;
+        height: 20px;
     border: solid aliceblue;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -65,8 +65,8 @@ body, html {
 .arrow-up {
     background-image: url("add_FILL0_wght400_GRAD0_opsz24.svg");
     background-color: #f0f0f0;
-    width: 20px; /* Установите ширину изображения */
-    height: 20px; /* Установите высоту изображения */
+    width: 20px;
+    height: 20px;
     border: solid aliceblue;
     border-width: 0 3px 3px 0;
     display: inline-block;
