@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Scroll</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      color: #f0f0f0;
+      height: 100%;
+    }
+
+    .top-background, .middle-background, .bottom-background {
+      font-size: 24px; /* Размер текста */
+      background-size: cover; /* Масштабировать изображение, чтобы оно полностью покрывало элемент */
+      background-position: center; /* Расположить изображение по центру */
+      height: 100vh; /* Используем вместо 100% для полноэкранного размера */
+      text-align: center;
+      position: relative;
+      padding-top: 20px; /* Добавляем отступ сверху к контейнеру */
+    }
+
+    .top-background {
+      background-image: url("odin.png");
+    }
+
+    .middle-background {
+      background-image: url("dva.gif");
+    }
+
+    .bottom-background {
+      background-image: url("tri.jpg");
+    }
+
+    .arrow-down, .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      position: absolute;
+      left: 50%;
+      cursor: pointer;
+      z-index: 1; /* Чтобы стрелки были поверх фона */
+    }
+
+    .arrow-down {
+      border-top: 45px solid #f0f0f0;
+      bottom: 45px;
+      transform: translateX(-50%);
+    }
+
+    .arrow-up {
+      border-bottom: 45px solid #f0f0f0;
+      top: 45px;
+      transform: translateX(-50%);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-background">
+  <a href="#middle"><div class="arrow-down"></div></a>
+</div>
+
+<div id="middle" class="middle-background">
+  <a href="#bottom"><div class="arrow-down"></div></a>
+</div>
+
+<div id="bottom" class="bottom-background">
+  <div class="arrow-up" onclick="scrollToTop()"></div>
+</div>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+</body>
+</html>
