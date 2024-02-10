@@ -23,18 +23,6 @@ body, html {
     padding-top: 20px;
 }
 
-.top-background {
-    background-image: url("../odin.png");
-}
-
-.middle-background {
-    background-image: url("../dva.gif");
-}
-
-.bottom-background {
-    background-image: url("../tri.jpg");
-}
-
 .arrow-down, .arrow-up {
     width: 0;
     height: 0;
