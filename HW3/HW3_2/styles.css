@@ -24,15 +24,15 @@ body, html {
 }
 
 .top-background {
-    background-image: url("odin.png");
+    background-image: url("../odin.png");
 }
 
 .middle-background {
-    background-image: url("dva.gif");
+    background-image: url("../dva.gif");
 }
 
 .bottom-background {
-    background-image: url("tri.jpg");
+    background-image: url("../tri.jpg");
 }
 
 .arrow-down, .arrow-up {
