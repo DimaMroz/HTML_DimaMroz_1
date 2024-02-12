@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url('https://cdn.pixabay.com/photo/2015/10/12/14/57/background-984866_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        form {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2a75bb;
+        }
+
+        .or {
+            margin: 10px 0;
+            color: #999;
+        }
+
+        .facebook-login {
+            color: #385185;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .forgot-password {
+            color: #003569;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .signup-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        .signup-link {
+            color: #0094f4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form>
+        <img src="https://www.logo.wine/a/logo/Instagram/Instagram-Wordmark-Black-Logo.wine.svg" alt="Instagram Logo" style="width: 200px; margin-bottom: 20px;">
+        <input type="text" name="username" placeholder="Номер телефону, ім'я користувача або email" required>
+        <input type="password" name="пароль" placeholder="Пароль" required>
+        <button type="submit" class="btn">Увійти</button>
+        <p class="or">АБО</p>
+        <a href="#" class="facebook-login">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Facebook-512.png" alt="Facebook Logo" style="width: 20px; vertical-align: middle;">
+            Увійти через Facebook
+        </a>
+        <p class="forgot-password">Забули пароль?</p>
+    </form>
+    <div class="signup-box">
+        Немає облікового запису? <a href="#" class="signup-link">Зареєструйтеся</a>
+    </div>
+</div>
+</body>
+</html>
